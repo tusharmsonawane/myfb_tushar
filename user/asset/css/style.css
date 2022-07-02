@@ -1,0 +1,254 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+
+/* this is index page css start */
+.fb-status{
+    height:130px;
+    width:auto;
+}
+.fb-status2{
+    display:flex;
+    align-items:center;
+    height:130px;
+    /* margin-left:10px; */
+}
+.fb-status2 a img{
+    height:100px;
+    width:100px;
+    margin-left:10px;
+}
+  .fb-status2{
+    overflow:auto;
+    white-space: nowrap;
+    }
+    .post-page{
+  overflow-y:scroll;
+  margin-top:20px;
+  height:82vh;
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.15),
+  inset -5px -5px 15px rgba(255,255,255,0.15),
+   5px 5px 15px rgba(0,0,0,0.15),
+   -5px -5px 15px rgba(255,255,255,0.15);
+}
+::-webkit-scrollbar{
+  width:0px;
+}
+.profile_page{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+@media screen and (max-width:768px){
+    .fb-status{
+        display:flex;
+        align-items:center;
+        height:100px;
+    }
+    .fb-status2 a img{
+        height:80px;
+        width:80px;
+    }
+    .profile_page{
+        display:none;
+    }
+
+     .userpose{
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+}
+/* this is index page css end */
+  .user-bar{
+      overflow-y: scroll;
+    }
+
+  .notify-bar{
+    overflow-y: scroll;
+  }
+/* this is scrollbar css start */
+
+::-webkit-scrollbar{
+  width:10px;
+  transition:0.3s ease-in-all;
+ 
+}
+
+::-webkit-scrollbar-thumb{
+background: #000;
+}
+
+/* this is scrollbar css end */
+/* comment section start */
+.comment-box{
+    border-radius: 15px 15px 5px 15px;
+    width:250px;
+}
+.body{
+  height:300px;
+  overflow-y: scroll;
+}
+.textmsg{
+  border:1px solid #000;
+  margin:20px;
+  width:200px;
+  border-radius:20px 20px 0px 20px;
+
+}
+.textmsg img{
+   margin:5px;
+}
+
+.body .textmsg p{
+  margin:5px;
+  margin-left:15px;
+}
+.u_img{
+height: 350px;
+width:100%;
+}
+.footer{
+  position:relative;
+   margin:15px;
+}
+
+.img_mr{
+  margin:10px;
+}
+
+/* comment section end */
+
+.plus_btn{
+  position:absolute;
+  bottom:0px;
+  right:38px;  
+  border:1px solid #fff;
+  background:none;
+  cursor:pointer;
+}
+
+/* search bar start */
+.wrapper{
+  margin-top:20px;
+}
+.wrapper .searchbar{
+    position: relative;
+    background-color: #fff;
+    width:100%;
+    border-radius: 5px;
+    box-shadow:0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+.searchbar input{
+    height:50px;
+    width:100%;
+    outline:none;
+    border:none;
+    border-radius: 5px;
+    padding:0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.12);
+}
+.searchbar .icon{
+    height:55px;
+    width:55px;
+    line-height:55px;
+    position:absolute;
+    top:0;
+    right:0;
+    text-align: center;
+    cursor: pointer;
+    background:none;
+    border:none;
+}
+.searchbar .user_auth{
+    padding:0;
+    min-height: 0px;
+    overflow-y: scroll;
+    opacity:0;
+    pointer-events: none;
+    
+  
+}
+.searchbar.active .user_auth{
+    padding:10px 8px;
+    max-height: 180px;
+    opacity:1;
+    pointer-events: auto;
+}
+
+.user_auth li{
+    list-style: none;
+    padding:8px 12px;
+    width:100%;
+    cursor:default;
+    border-radius:3px;
+}
+.user_auth.active{
+    display:none;
+    
+}
+.searchbar.active .user_auth li{
+    display:block;
+}
+.user_auth li:hover{
+    background-color: #efefef;
+}
+/* search bar end */
+
+/* 404 error start */
+
+
+.container1{
+width:100%;
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+text-align:center;
+color: #343434;
+}
+.error_h1{
+font-size: 160px;
+margin:0;
+font-weight: 900;
+letter-spacing: 20px;
+background: url("../../imgd/error.png") center no-repeat;
+-webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+
+}
+.error_a{
+text-decoration: none;
+background:#b8e994;
+padding:10px 30px;
+border-radius: 20px;
+color:#000;
+}
+.error_a:hover{
+background:#e55039aa;
+color:#fff;
+}
+@media screen and (max-width:400px) {
+.error_h2{
+font-size:17px;
+}
+.error_h1{
+font-size:80px;
+}
+.error_p{
+font-size:13px;
+}
+.error_a{
+padding:7px 20px;
+}
+}
+
+/* 404 error end */
+
+/* setting folder start */
+
+/* setting folder end */
